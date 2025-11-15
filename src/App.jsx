@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FilterComponent from "./components/filterComponent";
 import NavComponent from "./components/NavComponent";
+import CountriesComponent from "./components/CountriesComponent";
 import "./App.css";
 import cafeBackground from "./assets/cafe-background.png"
 
@@ -36,14 +37,10 @@ function App() {
       <NavComponent />
       <div id="mainBody">
         <p className="bodyMainText" style={parallaxTextStyle}>discover more about coffee below</p>
-        <img id="cafeBackground"src={cafeBackground} alt="cafe-background" />
+        <img id="cafeBackground" src={cafeBackground} alt="cafe-background" />
       </div>
       <div className="downArrow"></div>
-      <div id="countries">
-        <div className="countriesContainer">
-
-        </div>
-      </div>
+      <CountriesComponent />
       <div id="qualities">
         <div className="qualitiesContainer">
           
