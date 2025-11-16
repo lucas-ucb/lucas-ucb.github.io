@@ -9,12 +9,10 @@ function App() {
   const [count, setCount] = useState(0);
   const [scrollY, setScrollY] = useState(0);
 
-  // Function to update scroll position
   const handleScroll = () => {
-    setScrollY(window.scrollY);  // Capture the scroll position
+    setScrollY(window.scrollY);
   };
 
-  // Add event listener on component mount and cleanup on unmount
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -22,9 +20,8 @@ function App() {
     };
   }, []);
 
-  // Parallax effect: Adjust text position based on scrollY
   const parallaxTextStyle = {
-    transform: `translate(-50%, ${-50 + scrollY * -0.7}%)`,  // Adjust the multiplier to control movement
+    transform: `translate(-50%, ${-50 + scrollY * -0.7}%)`,
   };
 
   function filterTask() {}

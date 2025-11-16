@@ -10,74 +10,40 @@ function CountriesComponent() {
       <div id="countriesRepresentedContainer">
         <h2>Countries Represented</h2>
         <ul>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Colombia">Colombia</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Taiwan">Taiwan</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Laos">Laos</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Costa_Rica">Costa Rica</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Guatemala">Guatemala</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Tanzania">Tanzania</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Ethiopia">Ethiopia</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Thailand">Thailand</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/United_States">
-              United States
-            </a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Kenya">Kenya</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Uganda">Uganda</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Indonesia">Indonesia</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Peru">Peru</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Panama">Panama</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Nicaragua">Nicaragua</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Vietnam">Vietnam</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Honduras">Honduras</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/El_Salvador">El Salvador</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Madagascar">Madagascar</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Mexico">Mexico</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Myanmar">Myanmar</a>
-          </li>
+          <li><a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Burundi">Burundi</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/China">China</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Colombia">Colombia</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Costa_Rica">Costa Rica</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ecuador">Ecuador</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/El_Salvador">El Salvador</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ethiopia">Ethiopia</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Guatemala">Guatemala</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Haiti">Haiti</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Honduras">Honduras</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/India">India</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Indonesia">Indonesia</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ivory_Coast">Ivory Coast</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Japan">Japan</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Kenya">Kenya</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Laos">Laos</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Malawa">Malawi</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Mexico">Mexico</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Mauritius">Mauritius</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Myanmar">Myanmar</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Nicaragua">Nicaragua</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Panama">Panama</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Papua_New_Guinea">Papua New Guinea</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Peru">Peru</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Philippines">Philippines</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Rwanda">Rwanda</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Taiwan">Taiwan</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Tanzania">Tanzania</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Thailand">Thailand</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/United_States">United States</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Uganda">Uganda</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Vietnam">Vietnam</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Zambia">Zambia</a></li>
         </ul>
       </div>
     </div>
