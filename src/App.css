@@ -331,3 +331,100 @@ body {
     height: 65%;
     background-color: #848484;
 }
+
+/* Slider CSS */
+.labelRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggleGroup {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.rangeSlider {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.rangeSlider label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* TRACK WRAPPER */
+.sliderTrack {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+/* BASE TRACK */
+.sliderTrack input[type="range"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  pointer-events: none; /* stacks both sliders but only thumbs get interaction */
+}
+
+.sliderTrack input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.sliderTrack input[type="range"]::-moz-range-track {
+  background: transparent;
+}
+
+.sliderBaseTrack {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* ACTIVE HIGHLIGHT RANGE */
+.sliderRangeHighlight {
+  position: absolute;
+  height: 8px;
+  background: #5a3807;
+  border-radius: 4px;
+  top: 8px;
+  z-index: 1;
+}
+
+/* THUMBS */
+.sliderTrack input[type="range"] {
+  position: absolute;
+  z-index: 3;   /* key fix */
+  pointer-events: none;
+  width: 100%;
+  appearance: none;
+  background: none;
+}
+
+.sliderTrack input[type="range"]::-webkit-slider-thumb,
+.sliderTrack input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  z-index: 5; /* just to be safe */
+}
+
+.valueRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5a3807;
+}

@@ -4,6 +4,7 @@ import NavComponent from "./components/NavComponent";
 import MainBodyComponent from "./components/MainBodyComponent";
 import CountriesComponent from "./components/CountriesComponent";
 import AttributesComponent from "./components/AttributesComponent";
+import SliderComponent from "./components/SliderComponent";
 import "./App.css";
 
 
@@ -30,8 +31,10 @@ function App() {
         <div className="filtersContainer">
           <div className="filterContainer">
             <h1>Filters</h1>
-
+            <SliderComponent />
           </div>
+
+          
           <div className="searchContainer">
             <form onSubmit={handleSearchBtn}>
               <input
