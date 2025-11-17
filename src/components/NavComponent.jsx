@@ -14,8 +14,8 @@ function FilterComponent() {
           <li className="navOptionCountries">
             <a href="./">Countries</a>
           </li>
-          <li className="navOptionQualities">
-            <a href="./">Qualities</a>
+          <li className="navOptionAttributes">
+            <a href="./">Attributes</a>
           </li>
           <li className="navOptionMetadata">
             <a href="./">Metadata</a>

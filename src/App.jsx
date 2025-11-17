@@ -1,28 +1,13 @@
 import { useState, useEffect } from "react";
 import FilterComponent from "./components/filterComponent";
 import NavComponent from "./components/NavComponent";
+import MainBodyComponent from "./components/MainBodyComponent";
 import CountriesComponent from "./components/CountriesComponent";
+import AttributesComponent from "./components/AttributesComponent";
 import "./App.css";
-import cafeBackground from "./assets/cafe-background.png"
+
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [scrollY, setScrollY] = useState(0);
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const parallaxTextStyle = {
-    transform: `translate(-50%, ${-50 + scrollY * -0.7}%)`,
-  };
 
   function filterTask() {}
 
@@ -32,17 +17,10 @@ function App() {
         <title>CoffeeFilter</title>
       </header>
       <NavComponent />
-      <div id="mainBody">
-        <p className="bodyMainText" style={parallaxTextStyle}>discover more about coffee below</p>
-        <img id="cafeBackground" src={cafeBackground} alt="cafe-background" />
-      </div>
+      <MainBodyComponent />
       <div className="downArrow"></div>
       <CountriesComponent />
-      <div id="qualities">
-        <div className="qualitiesContainer">
-          
-        </div>
-      </div>
+      <AttributesComponent />
       <div>
         <h1>Title</h1>
         <FilterComponent onFilter={filterTask} />
@@ -50,5 +28,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
