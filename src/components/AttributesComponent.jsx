@@ -17,9 +17,9 @@ function AttributesComponent() {
     Sweetness: "Sweetness (Out of 10) can be described as caramel-like, fruity, or floral, and is a desirable quality in coffee.",
     CupperPoints: "CupperPoints (Out of 10) are assigned by professionals who score coffee based on several attributes collectively.",
     TotalCupPoints: "TotalCupPoints (Out of 100) is the overall score of the coffee, aggregating all previous scoring factors.",
-    Color: "Color refers to the visual appearance of the coffee beans, which can indicate how they were roasted.",
+    Color: "Color refers to the visual appearance of the coffee beans, which can indicate how they were roasted. There are options for green, blue-green, and bluish-green (more subtle contrast than blue-green).",
     Country: "The country of origin can greatly influence the flavor profile of coffee, as different regions produce different coffee types.",
-    Altitude: "The altitude at which the coffee is grown. There are minimum, maximum, and mean measurements for this attribute.",
+    Altitude: "The altitude (m) at which the coffee is grown. There are minimum, maximum, and mean measurements for this attribute.",
   };
 
   const handleClick = (item) => {
@@ -46,6 +46,9 @@ function AttributesComponent() {
         <p>
           Great question! CoffeeFilter supports filtering using <b>any</b> of
           the attributes below. Have fun exploring!
+        </p>
+        <p>
+          *Note: some data may not contain values for certain fields, and will therefore not show up when filtered
         </p>
         <div className="attributesTextContainer">
           <ul>

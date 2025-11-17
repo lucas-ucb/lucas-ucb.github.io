@@ -231,6 +231,14 @@ body {
     margin-top: 20px;
 }
 
+.attributesContainer p {
+    margin-top: 0px;
+}
+
+.attributesContainer p:nth-child(3) {
+    font-size: 0.8rem;
+}
+
 #coffeeFilter {
     height: auto;
     width: auto;
@@ -251,10 +259,6 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.attributesContainer a {
-    text-decoration: none;
 }
 
 .tooltip {
@@ -285,4 +289,45 @@ body {
 
 .attributesBtn:hover {
   color: #f0cb5d;
+}
+
+/* FILTERS */
+#filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #5a3807;;
+}
+
+.filtersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    height: 95vh;
+    background-color: #ffffff;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.filterContainer {
+    width: 98vw;
+    height: 30%;
+    background-color: rgb(230, 230, 230);
+}
+
+.searchContainer {
+    width: 98vw;
+    height: 5%;
+    background-color: #ffffff;
+}
+
+.searchItemsContainer {
+    width: 98vw;
+    height: 65%;
+    background-color: #848484;
 }
