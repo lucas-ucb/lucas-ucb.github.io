@@ -4,7 +4,7 @@ import NavComponent from "./components/NavComponent";
 import MainBodyComponent from "./components/MainBodyComponent";
 import CountriesComponent from "./components/CountriesComponent";
 import AttributesComponent from "./components/AttributesComponent";
-import SliderComponent from "./components/SliderComponent";
+import AllSlidersComponent from "./components/AllSlidersComponent";
 import "./App.css";
 
 
@@ -31,7 +31,7 @@ function App() {
         <div className="filtersContainer">
           <div className="filterContainer">
             <h1>Filters</h1>
-            <SliderComponent />
+            <AllSlidersComponent />
           </div>
 
           
@@ -48,7 +48,7 @@ function App() {
             </form>
           </div>
           <div className="searchItemsContainer">
-
+            
           </div>
         </div>
       </div>
