@@ -3,8 +3,9 @@ import coffeeFilter from ".././assets/coffee-filter.png";
 
 function AttributesComponent() {
   const [tooltip, setTooltip] = useState("");
-  const [showTooltip, setShowTooltip] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false); 
 
+  // descriptions are filled in from the dataset metadata here: https://www.kaggle.com/datasets/fatihb/coffee-quality-data-cqi
   const descriptions = {
     Aroma: "Aroma (Out of 10) refers to the scent or fragrance of the coffee.",
     Flavor: "Flavor (Out of 10) of coffee is evaluated based on the taste, including any sweetness, bitterness, acidity, and other flavor notes.",
@@ -22,11 +23,13 @@ function AttributesComponent() {
     Altitude: "The altitude (m) at which the coffee is grown. There are minimum, maximum, and mean measurements for this attribute.",
   };
 
+  // when text is clicked, show the tooltip
   const handleClick = (item) => {
     setTooltip(descriptions[item]);
     setShowTooltip(true);
   };
 
+  // this is so that the tooltip closes if the user clicks outside
   useEffect(() => {
     const closeTooltipOnClickOutside = (e) => {
       if (!e.target.closest(".tooltip") && !e.target.closest("button")) {
@@ -56,7 +59,7 @@ function AttributesComponent() {
               <li key={item}>
                 <button
                   className="attributesBtn"
-                  onClick={() => handleClick(item)} // Show the tooltip
+                  onClick={() => handleClick(item)}
                 >
                   {item}
                 </button>

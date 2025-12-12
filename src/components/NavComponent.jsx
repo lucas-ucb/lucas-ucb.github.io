@@ -1,7 +1,19 @@
 import coffeeBeanIcon from '.././assets/coffee-bean-icon.png';
 import coffeeCupIcon from '.././assets/coffee-cup-icon.png';
 
-function FilterComponent() {
+function NavComponent() { 
+
+  // handle scrolling to the section of choice
+  const handleScrollTo = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <nav id="mainNav">
       <img id="coffeeBeanIcon" src={coffeeBeanIcon} alt="coffee-bean-icon" />
@@ -9,16 +21,32 @@ function FilterComponent() {
         <h1>CoffeeFilter</h1>
         <ul className="navOptions">
           <li className="navOptionFilter">
-            <a href="./">Filter</a>
+            <span 
+              onClick={() => handleScrollTo('filter-area')} 
+            >
+              Filter
+            </span>
           </li>
           <li className="navOptionCountries">
-            <a href="./">Countries</a>
+            <span 
+              onClick={() => handleScrollTo('countries')} 
+            >
+              Countries
+            </span>
           </li>
           <li className="navOptionAttributes">
-            <a href="./">Attributes</a>
+            <span 
+              onClick={() => handleScrollTo('attributes')} 
+            >
+              Attributes
+            </span>
           </li>
           <li className="navOptionMetadata">
-            <a href="./">Metadata</a>
+            <span 
+              onClick={() => handleScrollTo('coffee-card-list-container')} 
+            >
+              Metadata
+            </span>
           </li>
         </ul>
       </div>
@@ -27,4 +55,4 @@ function FilterComponent() {
   );
 }
 
-export default FilterComponent;
+export default NavComponent;

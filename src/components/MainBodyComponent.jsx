@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import cafeBackground from ".././assets/cafe-background.png"
 
 function MainBodyComponent() {
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0); // scroll state
 
+  // updates scroll position
   const handleScroll = () => {
     setScrollY(window.scrollY);
   };
@@ -15,6 +16,7 @@ function MainBodyComponent() {
     };
   }, []);
 
+  // for the text to leave screen at faster rate than background when scrolling down
   const parallaxTextStyle = {
     transform: `translate(-50%, ${-50 + scrollY * -0.7}%)`,
   };
