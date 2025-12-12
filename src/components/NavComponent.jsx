@@ -45,7 +45,7 @@ function NavComponent() {
             <span 
               onClick={() => handleScrollTo('coffee-card-list-container')} 
             >
-              Metadata
+              Data
             </span>
           </li>
         </ul>
